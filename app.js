@@ -13,17 +13,17 @@ function agregarAmigo() {
         alert("Por favor, ingresa un nombre valido.");
         return;
     }
-     // Agregar el nombre a la lista si no esta vacio
+     // lista si no esta vacio
      listaAmigo.push(nombre);
 
-     // Limpiar el campo de entrada
+     // Limpiar el campo 
      input.value = "";
  
      mostrarLista();
  }
  function mostrarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; // Limpiar lista antes de actualizar
+    lista.innerHTML = ""; 
 
     listaAmigo.forEach((nombre) => {
         let item = document.createElement("li");
@@ -34,7 +34,7 @@ function agregarAmigo() {
 
 function sortearAmigo() {
     if (listaAmigo.length === 0) {
-        alert("Agrega al menos un nombre antes de sortear."); // Verifica que exista por lo menos un amigo 
+        alert("Agrega al menos un nombre antes de sortear."); 
         return;
     }
 
